@@ -11,8 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('lisra', function (Blueprint $table) {
+        Schema::create('Tarefas', function (Blueprint $table) {
             $table->id();
+            $table->string('nome', 55);
             $table->timestamps();
         });
     }
