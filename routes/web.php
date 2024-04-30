@@ -1,10 +1,10 @@
 <?php
-use App\Http\Controllers\listartarefas;
+use App\Http\Controllers\TarefasController;
 use Illuminate\Support\Facades\Route;
 
 //Route::get('/', function () {
-//   return view('welcome');git s
-//});
+   //return view('welcome');
+// });
 
 //Route::view('/listar','listar');
 
@@ -12,4 +12,12 @@ use Illuminate\Support\Facades\Route;
    return view('welcome');
 })->name('btn-salve');*/
 
-Route::get('/listar123', [listartarefas::class, 'index']);
+Route::get('/tarefas/create', [TarefasController::class, 'create']);
+
+Route::get('/tarefas/edit', [TarefasController::class, 'edit']);
+
+Route::get('/tarefas/destroy', [TarefasController::class, 'destroy']);
+
+Route::get('/tarefas/listar', [TarefasController::class, 'listar']);
+
+Route::get('/tarefas/visualizar', [TarefasController::class, 'visualizar']);
