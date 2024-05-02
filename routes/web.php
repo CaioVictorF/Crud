@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/tarefas/create', [TarefasController::class, 'create']);
 
+Route::post('/tarefas/story', [TarefasController::class, 'story'])->name('story');
+
 Route::get('/tarefas/edit', [TarefasController::class, 'edit']);
 
 Route::get('/tarefas/destroy', [TarefasController::class, 'destroy']);
