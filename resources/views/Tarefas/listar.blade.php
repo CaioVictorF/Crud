@@ -1,18 +1,24 @@
 @extends('Layout.app')
 
-@section('Tarefas')
+@section('Tarefas/listagem')
 
 @section('content')
-        <header><h1>Novas tarefas</h1></header>
-            <input class="button1" type="submit" value="Listar tarefas">
-            <section>
-                <form action="cad.php" method="get">
-                    <label for="nome">Tarefas</label>
-                    <input type="text" name="tarefas" id="nome">
+<form action="{{ route('listar') }}" method="post">
+        <h1>{{$nome}}</h1>
+        <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">nome</th>
+            </tr>
+        </thead>
+        <tbody>
+        {{--@foreach($tarefa)
+            <tr>
+                <th>{{ $tarefa ->nome }}</th>
+            </tr>
+        endforeach--}}
+        </tbody>
+        </table>
+        </form>
 
-                    <!-- AS OPÇÕES DE EDITAR E EXCLUIR PODEM SER OU DEVEM SER LINKS  -->
-                    <input href="btn-edit" class="button2" type="submit" value="edit">
-                    <input href="btn-destroy" class="button2" type="submit" value="destroy">
-                </form>
-            </section>
 @endsection 

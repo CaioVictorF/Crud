@@ -8,7 +8,7 @@
         <header><h1>Novas tarefas</h1></header>
             <section>
                     <label for="nome">Tarefas</label>
-                    <input type="text" name="tarefas" id="nome">
+                    <input type="text" name="nome" id="nome">
                     <input href="btn-save" class="button2" type="submit" value="Salvar">
             </section>
     </form>

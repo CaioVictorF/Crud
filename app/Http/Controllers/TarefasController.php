@@ -4,20 +4,18 @@ namespace App\Http\Controllers;
 use App\Models\Tarefa;
 use Illuminate\Http\Request;
 
-class TarefasController extends Controller
-{
+class TarefasController extends Controller{
     public function create(){
         return view('Tarefas/create'); 
     }
 
     public function story(Request $request){
-        //dd($request->tarefas);  
-        $tarefa = Tarefa::create($request->all());
-        dd($tarefa);
+        Tarefa::create($request->all());
+        return view('Tarefas/create', ['listar']);
+
     }
- 
     public function edit(){
-        return view('Tarefas/edit');   
+        return view('Tarefas/edit');     
     }
 
     public function destroy() {
@@ -25,6 +23,8 @@ class TarefasController extends Controller
     }
 
     public function listar() {
-        return view('Tarefas/listar');    
+        //$tarefa = Tarefa::all();
+        $nome= 'Caio';
+        return view('Tarefas/listar', ['nome' => $nome]);    
     }
 }

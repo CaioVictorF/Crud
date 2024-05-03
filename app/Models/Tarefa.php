@@ -11,3 +11,4 @@ class Tarefa extends Model{
     protected $table = 'Tarefas';
     protected $fillable = ['nome'];
 }
+  
