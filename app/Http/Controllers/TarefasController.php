@@ -11,7 +11,7 @@ class TarefasController extends Controller{
 
     public function story(Request $request){
         Tarefa::create($request->all());
-        return view('Tarefas/create', ['listar']);
+        return view('Tarefas/create', ['listar'])->with('sucesso', 'Tarefa cadastrada com sucesso!' );
 
     }
     public function edit(){
@@ -23,8 +23,10 @@ class TarefasController extends Controller{
     }
 
     public function listar() {
-        //$tarefa = Tarefa::all();
-        $nome= 'Caio';
-        return view('Tarefas/listar', ['nome' => $nome]);    
+        $tarefas = Tarefa::all();
+        //dd($tarefas);
+        return view('Tarefas/listar', ["tarefas"=>$tarefas]);
+        //return view('Tarefas/listar')->with('Tarefa', $tarefas);
+        //return view('Tarefas/listar', ['nome' => $nome]);    
     }
 }

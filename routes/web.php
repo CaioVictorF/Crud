@@ -10,9 +10,11 @@ use Illuminate\Support\Facades\Route;
 
 /*Route::get('listar', function () {
    return view('welcome');
-})->name('btn-salve');*/
+})->name('btn-salve');*/ 
 
-Route::get('/tarefas/create', [TarefasController::class, 'create']);
+
+
+Route::get('/tarefas/create', [TarefasController::class, 'create'])->name('create');
 
 Route::post('/tarefas/story', [TarefasController::class, 'story'])->name('story');
 
@@ -20,6 +22,7 @@ Route::get('/tarefas/edit', [TarefasController::class, 'edit']);
 
 Route::get('/tarefas/destroy', [TarefasController::class, 'destroy']);
 
-Route::get('/tarefas/listar', [TarefasController::class, 'listar']);
+Route::get('/tarefas/listar', [TarefasController::class, 'listar'])->name('listar');
 
 Route::get('/tarefas/visualizar', [TarefasController::class, 'visualizar']);
+
