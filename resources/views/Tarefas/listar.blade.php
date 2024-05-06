@@ -16,8 +16,8 @@
         <tr>
             <th>{{ $tarefa ->nome }}</th>
         </tr>
-        <a href= ""class="btn btn-sucess">Editar</a>
-        <a href= ""class="btn btn-danger">Excluir</a>
+        {{--<a href= ""class="btn btn-sucess">Editar</a>
+        <a href= ""class="btn btn-danger">Excluir</a>--}}
     @endforeach
     </tbody>
     </table>
