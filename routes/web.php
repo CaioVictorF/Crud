@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/tarefas/create', [TarefasController::class, 'create'])->name('create');
+/*Route::get('/tarefas/create', [TarefasController::class, 'create'])->name('create');
 
 Route::post('/tarefas/story', [TarefasController::class, 'story'])->name('story');
 
@@ -24,5 +24,13 @@ Route::get('/tarefas/destroy', [TarefasController::class, 'destroy']);
 
 Route::get('/tarefas/listar', [TarefasController::class, 'listar'])->name('listar');
 
-Route::get('/tarefas/visualizar', [TarefasController::class, 'visualizar']);
+Route::get('/tarefas/visualizar', [TarefasController::class, 'visualizar']);*/
+
+Route::prefix('tarefas')->group(function(){
+   //Route::get('/create', [TarefasController::class, 'create'])->name('tarefas/create');
+   Route::get('/create', [TarefasController::class, 'create'])->name('tarefas-create');
+   Route::post('/store', [TarefasController::class, 'store'])->name('tarefas-store');
+   Route::get('/listar', [TarefasController::class, 'listar'])->name('tarefas-listar');
+   Route::get('/{id}/edit', [TarefasController::class, 'edit'])->where('id', '[0,9]+')->name('tarefas-edit');
+});
 

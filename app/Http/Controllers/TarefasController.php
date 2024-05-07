@@ -9,13 +9,14 @@ class TarefasController extends Controller{
         return view('Tarefas/create'); 
     }
 
-    public function story(Request $request){
+    public function store(Request $request){
         Tarefa::create($request->all());
         return view('Tarefas/create', ['listar'])->with('sucesso', 'Tarefa cadastrada com sucesso!' );
 
     }
-    public function edit(){
-        return view('Tarefas/edit');     
+    public function edit($id){
+        $tarefas = Tarefa::where('id', $id)->first();
+        dd($tarefas);
     }
 
     public function destroy() {
