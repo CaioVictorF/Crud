@@ -11,16 +11,30 @@ class TarefasController extends Controller{
 
     public function store(Request $request){
         Tarefa::create($request->all());
-        return view('Tarefas/create', ['listar'])->with('sucesso', 'Tarefa cadastrada com sucesso!' );
+        return view('Tarefas/create', ['listar']);
+        
 
     }
     public function edit($id){
         $tarefas = Tarefa::where('id', $id)->first();
-        dd($tarefas);
+        if(!empty($tarefas)){
+            return view('Tarefas/edit', ["tarefas"=>$tarefas]);
+        }else{
+            //return view('Tarefas/create', ['listar']);
+            return redirect()->route('tarefas-listar');
+        }   
     }
 
-    public function destroy() {
-        return view('Tarefas/destroy');    
+    public function update(Request $request, $id){
+        $update=['nome'=>$request->nome,];
+        Tarefa::where('id', $id)->update($update);
+        return redirect()->route('tarefas-listar');
+
+    }
+
+    public function destroy($id) {
+        Tarefa::where('id', $id)->delete();
+        return redirect()->route('tarefas-listar');
     }
 
     public function listar() {

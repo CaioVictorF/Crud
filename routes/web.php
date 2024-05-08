@@ -31,6 +31,9 @@ Route::prefix('tarefas')->group(function(){
    Route::get('/create', [TarefasController::class, 'create'])->name('tarefas-create');
    Route::post('/store', [TarefasController::class, 'store'])->name('tarefas-store');
    Route::get('/listar', [TarefasController::class, 'listar'])->name('tarefas-listar');
-   Route::get('/{id}/edit', [TarefasController::class, 'edit'])->where('id', '[0,9]+')->name('tarefas-edit');
+   Route::get('/{id}/edit', [TarefasController::class, 'edit'])->whereNumber('id')->name('tarefas-edit');
+   //Route::post('/update', [TarefasController::class, 'update'])->whereNumber('id')->name('tarefas-update');
+   Route::put('/{id}/update', [TarefasController::class, 'update'])->whereNumber('id')->name('tarefas-update');
+   Route::get('/{id}', [TarefasController::class, 'destroy'])->whereNumber('id')->name('tarefas-destroy'); 
 });
 
