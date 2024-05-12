@@ -4,6 +4,7 @@
 
 @section('content')
 <h1>listagem de cadastros</h1>
+@include('Tarefas/flash-message')
     <a href="{{ route('tarefas-create') }}">Novo Registro</a>
     <table class="table">
     <thead>
@@ -21,6 +22,7 @@
             <th>
                 <a href="{{ route('tarefas-edit', ['id' => $tarefa->id]) }}">Editar</a>
                 <a href="{{ route('tarefas-destroy', ['id' => $tarefa->id]) }}">Excluir</a>
+                {{--<a href="{{ route('tarefas-view', ['id' => $tarefa->id]) }}">Visualizar</a>--}}
             </th>
         </tr>
     @endforeach
