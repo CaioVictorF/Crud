@@ -14,8 +14,6 @@
         </div>
       
         <button type="submit" class="btn btn-danger">Excluir</button><a href="{{ route('tarefas-listar', ['id' => $tarefas->id]) }}"></a>
-        <button type="submit"  class="btn btn-primary"><a href="{{ route('tarefas-listar', ['id' => $tarefas->id]) }}">Cancelar</a></button>
-        
-
+        <button type="submit" class="btn btn-primary"><a href="{{ route('tarefas-listar') }}">Cancelar</a></button>
     </form>
     </hr>

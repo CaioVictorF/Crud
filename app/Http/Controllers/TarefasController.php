@@ -51,9 +51,10 @@ class TarefasController extends Controller{
         //return view('Tarefas/listar', ['nome' => $nome]);    
     }
 
-    public function visualizar($id){
-        $tarefas = Tarefa::where('id', $id)->first();
-        return view('Tarefas/visualizar', ["tarefas"=>$tarefas]);
+    public function view(Tarefa $tarefa, $id){
+        $tarefa = Tarefa::where('id', $id)->first();
+        //$tarefas = Tarefa::where('id', $id)->first();
+        return view('Tarefas/view', ["tarefa"=>$tarefa]);
     }
 
 }

@@ -15,14 +15,14 @@
         </tr>
     </thead>
     <tbody>
-    @foreach($tarefas as $tarefa)
+    @foreach($tarefas as $tarefa)  
         <tr>
             <th>{{ $tarefa->id }}</th>
             <th>{{ $tarefa->nome }}</th>
             <th>
                 <a href="{{ route('tarefas-edit', ['id' => $tarefa->id]) }}">Editar</a>
                 <a href="{{ route('tarefas-destroy', ['id' => $tarefa->id]) }}">Excluir</a>
-                {{--<a href="{{ route('tarefas-view', ['id' => $tarefa->id]) }}">Visualizar</a>--}}
+                <a href="{{ route('tarefas-view', ['id' => $tarefa->id]) }}">Visualizar</a>
             </th>
         </tr>
     @endforeach

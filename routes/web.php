@@ -30,12 +30,15 @@ Route::get('/tarefas/visualizar', [TarefasController::class, 'visualizar']);*/
    //Route::get('/create', [TarefasController::class, 'create'])->name('tarefas/create');
    Route::get('/create', [TarefasController::class, 'create'])->name('tarefas-create');
    Route::post('/store', [TarefasController::class, 'store'])->name('tarefas-store');
+
    Route::get('/listar', [TarefasController::class, 'listar'])->name('tarefas-listar');
    Route::get('/{id}/edit', [TarefasController::class, 'edit'])->whereNumber('id')->name('tarefas-edit');
-   //Route::post('/update', [TarefasController::class, 'update'])->whereNumber('id')->name('tarefas-update');
    Route::put('/{id}/update', [TarefasController::class, 'update'])->whereNumber('id')->name('tarefas-update');
-   Route::get('/{id}', [TarefasController::class, 'destroy'])->whereNumber('id')->name('tarefas-destroy');
+
+   Route::get('/{id}/destroy', [TarefasController::class, 'destroy'])->whereNumber('id')->name('tarefas-destroy');
    Route::post('/{id}', [TarefasController::class, 'delete'])->whereNumber('id')->name('tarefas-delete');
-   //Route::get('/{id}', [TarefasController::class, 'view'])->whereNumber('id')->name('tarefas-view');
+
+   Route::get('/{id}', [TarefasController::class, 'view'])->whereNumber('id')->name('tarefas-view');
+   //Route::put('/{id}/updel', [TarefasController::class, 'updel'])->whereNumber('id')->name('tarefas-updel');
 });
 
