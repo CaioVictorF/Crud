@@ -31,10 +31,10 @@ Laravel é um dos frameworks para PHP mais utilizados no mercado. É um framewor
 
 # Como criar o projeto laravel
 ### Primeiramente instale o PHP com o comando:<p> 
-    - sudo dnf install php
+    * sudo dnf install php
 
 ### Para verificar a versão do PHP:<p>
-    -  php -v
+    * php -v
 
 ### Em seguida, instale o composer com o comando: <p>
     - php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
