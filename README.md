@@ -1,12 +1,23 @@
-# O que é o projeto 4Ttodo?
+# *O que é o projeto 4Ttodo?*
 O projeto se trata de um crud onde o desenvolvedor(estagiário) fará uma tela de cadastro de tarefas, Visualizar tarefas, editar tarefas e exclui-las.
 
-# Funcionalidades do sistema:
+# *Tecnologias utilizadas:*
+### Para backend<p>
+1. PHP<p>
+2. Banco de dados SQLite<p>
+3. DBeaver<p>
+4. Framework Laravel (Versão 11)<p>
+### Para frontend<p>
+1. HTML<p>
+2. CSS<p>
+
+# *Funcionalidades do sistema:*
 
 ### CADASTRO: <p>
 O usuário poderá cadastrar no banco de dados quantas tarefas ele achar necessário. Após digitar a tarefa e clicar no botão de salvar, uma mensagem de tarefa cadastrada com sucesso será exibida na tela na cor verde, mas caso o usuário queira salvar com o campo de mensagens em branco, uma mensagem de campo obrigatório será exibida em vermelho na tela.
 
-Após cadastrar todas as tarefas, o usuário poderá ver suas tarefas clicando no link listar, que irá direciona-lo para a tela de listagem.
+
+**Após cadastrar todas as tarefas, o usuário poderá ver suas tarefas clicando no link listar, que irá direciona-lo para a tela de listagem.**
 
 ### LISTAGEM:<p> 
 Na tela de listagem, o usuário verá suas tarefas listadas uma abaixo da outra na ordem que foi cadastrada e ao lada de cada tarefa, terá links com as opções de atualizar, excluir e visualizar. Logo acima da lista, terá um link de novo registro, que redirecionará o usuário caso queira adicionar uma nova tarefa.
@@ -21,7 +32,7 @@ Caso o usuário queira excluir uma tarefa, basta que ele clique no link de exclu
 Caso o usuário queira visualizar uma tarefa em específica, basta que ele clique no link de visualizar e ele redirecionará para a tela de visualização de tarefa. Nesta tela o usuário poderá ver somente a tarefa selecionada e seu ID, abaixo dela terá o botão de voltar que redirecionará para a tela de listar.
 
 
-# Sobre o framework Laravel
+# *Sobre o framework Laravel*
 <img src="https://i.ytimg.com/vi/CMwhGe12nxw/maxresdefault.jpg">
 <p align="center">
 
@@ -29,7 +40,11 @@ Laravel é um dos frameworks para PHP mais utilizados no mercado. É um framewor
 
 
 
+<<<<<<< HEAD
 # Como criar o projeto laravel
+=======
+# *Como criar o projeto laravel*
+>>>>>>> 72ec365 (Teste de formatação 05 do readme)
 ### 1. instale o PHP com o comando:<p> 
     sudo dnf install php
 
@@ -47,6 +62,7 @@ Laravel é um dos frameworks para PHP mais utilizados no mercado. É um framewor
     php -r "unlink('composer-setup.php');"
 
 ### 3.2 Depois do PHP e Composer instalados, já é é possível criar um projeto laravel, através do comando Create project comando:
+<<<<<<< HEAD
     composer create-project laravel/laravel:^10.0 example-app
 
 # Instalando e fazendo conexão com o BD:<p>
@@ -63,10 +79,33 @@ Para armazenar as tarefas no banco de dados, use o Sqlite com o dbeaver.
     Depois de clicar na conexão de banco, clique em avançar, selecione o bando SQLite e avance novamente.
 
 ### Obs: Após avançar, ele irá abrir uma nova janela solicitando o caminho para conexão do banco de dados com seu projeto. Você vai selecionar a opção de criar e irá ser redirecionado para a janela de arquivos. Nela você vai escolher o projeto no qual deseja conectar com o banco de dados.
+=======
+    composer create-project laravel/laravel example-app
 
+# *Instalando e fazendo conexão com o BD:*<p>
+**Para armazenar as tarefas no banco de dados, use o Sqlite com o dbeaver.**
+### Instalando Sqlite:
+    sudo dnf install sqlite
 
+**Obs: O Dbeaver pode ser baixado e  instalado direto do DBeaver Community, clicando no instalador Linux RPM Package(installer)**
 
+## Fazendo conexão com o banco:
+    Ao abrir o DBeaver, no canto superior esquerdo você clicará na opção de arquivos.
+    Ao clicar em arquivos, ele abrirá uma janela que mostrará a opção "novo".
+    Ao clicar em novo, ele abrirá outra janela e mostrará algumas opções do DBeaver, incluindo a opção de conexão de banco de dados.
+    Depois de clicar na conexão de banco, clique em avançar, selecione o bando SQLite e avance novamente.
+>>>>>>> 72ec365 (Teste de formatação 05 do readme)
+
+### Obs: Após avançar, ele irá abrir uma nova janela solicitando o caminho para conexão do banco de dados com seu projeto. Você vai selecionar a opção de criar e irá ser redirecionado para a janela de arquivos. Nela você vai escolher o projeto no qual deseja conectar com o banco de dados.
+
+# *Iniciando o servidor no terminal*:
+    php artisan serve
+
+<<<<<<< HEAD
 
 ## Em seguida, inicie o servidor de desenvolvimento local do Laravel, Artisan serve:
     php artisan serve
+=======
+**Depois de iniciar o servidor de desenvolvimento Artisan, seu aplicativo estará acessível no seu navegador da Web em http://localhost:8000.**
+>>>>>>> 72ec365 (Teste de formatação 05 do readme)
 
