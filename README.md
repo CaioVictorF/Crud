@@ -1,7 +1,7 @@
-## O que é o projeto 4Ttodo?
+# O que é o projeto 4Ttodo?
 O projeto se trata de um crud onde o desenvolvedor(estagiário) fará uma tela de cadastro de tarefas, Visualizar tarefas, editar tarefas e exclui-las.
 
-## Funcionalidades do sistema:
+# Funcionalidades do sistema:
 
 ### CADASTRO: <p>
 O usuário poderá cadastrar no banco de dados quantas tarefas ele achar necessário. Após digitar a tarefa e clicar no botão de salvar, uma mensagem de tarefa cadastrada com sucesso será exibida na tela na cor verde, mas caso o usuário queira salvar com o campo de mensagens em branco, uma mensagem de campo obrigatório será exibida em vermelho na tela.
@@ -21,7 +21,7 @@ Caso o usuário queira excluir uma tarefa, basta que ele clique no link de exclu
 Caso o usuário queira visualizar uma tarefa em específica, basta que ele clique no link de visualizar e ele redirecionará para a tela de visualização de tarefa. Nesta tela o usuário poderá ver somente a tarefa selecionada e seu ID, abaixo dela terá o botão de voltar que redirecionará para a tela de listar.
 
 
-## Sobre o framework Laravel
+# Sobre o framework Laravel
 <img src="https://i.ytimg.com/vi/CMwhGe12nxw/maxresdefault.jpg">
 <p align="center">
 
@@ -29,38 +29,47 @@ Laravel é um dos frameworks para PHP mais utilizados no mercado. É um framewor
 
 
 
-## Como criar o projeto laravel
-```bash
-### Primeiramente é preciso baixar o PHP com o comando:<p> 
-- sudo dnf install php
+# Como criar o projeto laravel
+### Primeiramente instale o PHP com o comando:<p> 
+    - sudo dnf install php
 
 ### Para verificar a versão do PHP:<p>
--  php -v
+    -  php -v
 
-### Em seguida, é preciso instalar o composer na máquina com o comando: <p>
-- php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+### Em seguida, instale o composer com o comando: <p>
+    - php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 
 ### Após isso, rode o comando:<p>
-- php -r "if (hash_file('sha384', 'composer-setup.php') 'dac665fdd8ec78b9800061b4150413ff2e3b6f88543c6f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+    - php -r "if (hash_file('sha384', 'composer-setup.php') 'dac665fdd8ec78b9800061b4150413ff2e3b6f88543c6f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 
 ### Para finalizar, rode os seguinte comandos:<p>
-- php composer-setup.php
-- php -r "unlink('composer-setup.php');"
+    - php composer-setup.php
+    - php -r "unlink('composer-setup.php');"
 
 ### Depois do PHP e Composer instalados, já é é possível criar um projeto laravel, através do comando Create project comando:
-- composer create-project laravel/laravel:^10.0 example-app
+    - composer create-project laravel/laravel:^10.0 example-app
 
-## Instalando e fazendo conexão com o BD:<p>
+# Instalando e fazendo conexão com o BD:<p>
 ### Para armazenar as tarefas no banco de dados, use o Sqlite com o dbeaver.
 ### Instalando Sqlite:
-- $ sudo dnf install sqlite
+    - $ sudo dnf install sqlite
+---
+ Obs: 
+O Dbeaver pode ser baixado e  instalado direto do DBeaver Community, clicando no instalador Linux RPM Package(installer)
+--
 
-### OBS: 
-- O Dbeaver pode ser baixado e  instalado direto do DBeaver Community, clicando no instalador Linux RPM Package(installer)
+### Fazendo conexão com o banco:
+    - Ao abrir o DBeaver, no canto superior esquerdo você clicará na opção de arquivos.
+    - Ao clicar em arquivos, ele abrirá uma janela que mostrará a opção "novo".
+    - Ao clicar em novo, ele abrirá outra janela e mostrará algumas opções do DBeaver, incluindo a opção de conexão de banco de dados.
+    - Depois de clicar na conexão de banco, clique em avançar, selecione o bando SQLite e avance novamente.
+
+### Obs:
+Após avançar, ele irá abrir uma nova janela solicitando o caminho para conexão do banco de dados com seu projeto. Você vai selecionar a opção de criar e irá ser redirecionado para a janela de arquivos. Nela você vai escolher o projeto no qual deseja conectar com o banco de dados.
 
 
 
 
 ### Em seguida, inicie o servidor de desenvolvimento local do Laravel, Artisan serve:
-- php artisan serve
-```
+    - php artisan serve
+
