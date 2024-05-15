@@ -40,29 +40,30 @@ Laravel é um dos frameworks para PHP mais utilizados no mercado. É um framewor
 
 
 
-<<<<<<< HEAD
+
 # Como criar o projeto laravel
-=======
-# *Como criar o projeto laravel*
->>>>>>> 72ec365 (Teste de formatação 05 do readme)
 ### 1. instale o PHP com o comando:<p> 
+---
     sudo dnf install php
-
+---
 ### 1.2 Para verificar a versão do PHP:<p>
+---
     php -v
-
+---
 ### 2. instale o composer com o comando: <p>
+---
     php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-
+---
 ### 2.2 Após isso, rode o comando:<p>
+---
     php -r "if (hash_file('sha384', 'composer-setup.php') 'dac665fdd8ec78b9800061b4150413ff2e3b6f88543c6f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-
+---
 ### 3. Para finalizar, rode os seguinte comandos:<p>
     php composer-setup.php
     php -r "unlink('composer-setup.php');"
 
 ### 3.2 Depois do PHP e Composer instalados, já é é possível criar um projeto laravel, através do comando Create project comando:
-<<<<<<< HEAD
+
     composer create-project laravel/laravel:^10.0 example-app
 
 # Instalando e fazendo conexão com o BD:<p>
@@ -94,18 +95,18 @@ Para armazenar as tarefas no banco de dados, use o Sqlite com o dbeaver.
     Ao clicar em arquivos, ele abrirá uma janela que mostrará a opção "novo".
     Ao clicar em novo, ele abrirá outra janela e mostrará algumas opções do DBeaver, incluindo a opção de conexão de banco de dados.
     Depois de clicar na conexão de banco, clique em avançar, selecione o bando SQLite e avance novamente.
->>>>>>> 72ec365 (Teste de formatação 05 do readme)
+
 
 ### Obs: Após avançar, ele irá abrir uma nova janela solicitando o caminho para conexão do banco de dados com seu projeto. Você vai selecionar a opção de criar e irá ser redirecionado para a janela de arquivos. Nela você vai escolher o projeto no qual deseja conectar com o banco de dados.
 
 # *Iniciando o servidor no terminal*:
     php artisan serve
 
-<<<<<<< HEAD
+
 
 ## Em seguida, inicie o servidor de desenvolvimento local do Laravel, Artisan serve:
     php artisan serve
-=======
+
 **Depois de iniciar o servidor de desenvolvimento Artisan, seu aplicativo estará acessível no seu navegador da Web em http://localhost:8000.**
->>>>>>> 72ec365 (Teste de formatação 05 do readme)
+
 
