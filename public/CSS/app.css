@@ -1,0 +1,64 @@
+*{
+    padding: 3px;
+}
+body {
+    background: whitesmoke;
+}
+
+h1{
+    height: 10px;
+    padding-top: 80px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-right: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 2.5px 2px rgb(120, 120, 120);
+}
+
+section{
+    border: 2px solid gray; 
+    border-radius: 8px;
+    width: 20%;
+    margin-left: 38%;
+    padding-top: 10px;
+
+}
+
+.input{
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+    margin-left: 22%;
+}
+
+.tarefas{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    margin-left: 40%;
+    
+}
+
+.link{
+
+}
+
+.btn{
+    margin-bottom: 0px;
+    margin-left: 43%;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-top: 10px; 
+    
+}
+.btn:hover{
+    background: green;
+    color: white;
+}
+
+.elements{}
+
+
+
+
+
+
+
+

@@ -33,10 +33,6 @@ Caso o usuário queira visualizar uma tarefa em específica, basta que ele cliqu
 
 
 # *Sobre o framework Laravel*
-
-
-
----
 Laravel é um dos frameworks para PHP mais utilizados no mercado. É um framework de aplicação web com sintaxe expressiva e elegante. O Laravel agiliza o processo de desenvolvimento flexibilizando tarefas comuns em seus projetos, como rotas, models, controllers, todos com uma estrutura já pré definida.<p> A versão utilizada neste projeto foi o Laravel 11.
 
 ---
