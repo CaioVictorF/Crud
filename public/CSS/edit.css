@@ -1,8 +1,5 @@
 *{
-    padding: 3px;
-}
-body {
-    background: whitesmoke;
+    padding: 5px;
 }
 
 .page{
@@ -15,18 +12,10 @@ h1{
 }
 
 .corpo{
-    text-align: center;
     border: 2px solid gray; 
     border-radius: 8px;
-}
-
-.tarefas{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.input{
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px gray;
+    align-items: center;
+    
 }
 
 .btn{
@@ -41,11 +30,11 @@ h1{
     border-radius: 6px;
 }
 
+.fc{
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+}
 
-
-
-
-
-
-
-
+.nome{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

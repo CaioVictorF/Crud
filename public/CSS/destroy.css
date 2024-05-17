@@ -1,8 +1,5 @@
 *{
-    padding: 3px;
-}
-body {
-    background: whitesmoke;
+    padding: 5px;
 }
 
 .page{
@@ -15,37 +12,41 @@ h1{
 }
 
 .corpo{
-    text-align: center;
     border: 2px solid gray; 
     border-radius: 8px;
+    align-items: center;
+    
 }
 
-.tarefas{
+.tarefa{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.input{
+.nome{
     border-radius: 5px;
     box-shadow: 2px 2px 2px gray;
 }
 
-.btn{
+.dlt{
     padding-top: 0.2%;
     padding-bottom: 0.2%;
     margin-top: 6px;
 }
 
-.btn:hover{
+.cncl{
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-top: 6px;
+}
+
+.dlt:hover{
     background: green;
     color: white;
     border-radius: 6px;
 }
 
-
-
-
-
-
-
-
-
+.cncl:hover{
+    background: green;
+    color: white;
+    border-radius: 6px;
+}
