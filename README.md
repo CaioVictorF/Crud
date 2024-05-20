@@ -112,13 +112,13 @@ https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://dbeave
 <p align="center"> <img alt="SQLiteconexão" title="SQLiteconexão" src="storage/img/prints/SQLiteconexão.png" width="50px"></p>
 
 2. Insira o nome do banco de dados SQLite:
-<p align="center"> <img alt="SQliteconexão2" title="SQliteconexão2" src="storage/img/prints/SQliteconexão2.png" width="50px"></p>
+<p align="center"> <img alt="SQliteconexão2" title="SQliteconexão2" src="storage/img/prints/SQliteconexão2.png" width="30px"></p>
 
 3. Entre no arquivo .env:
 <p align="center"> <img alt=".env" title=".env" src="storage/img/prints/.env.png" width="50px"></p>
 
 Em DBCONNECTION, passe as credenciais do banco
-<p align="center"> <img alt="dbconnection" title="dbconnection" src="storage/img/prints/dbconnection.png" width="50px"></p>
+<p align="center"> <img alt="dbconnection" title="dbconnection" src="storage/img/prints/dbconnection.png" width="40px"></p>
 
 **Para executar as migrações:<p>**
 ---
