@@ -13,8 +13,8 @@
         <div class="corpo">
             <label class="tarefa" for="name">Tarefa:</label>
             <input type="text" class="nome" class="form control" name="nome" value="{{ $tarefas->nome }}"><br>
-            <button type="submit" class="dlt" class="btn btn-danger">Excluir</button><a href="{{ route('tarefas-listar', ['id' => $tarefas->id]) }}"></a>
-            <button type="submit" class="cncl" class="btn btn-primary"><a href="{{ route('tarefas-listar') }}">Cancelar</a></button>
+            <button type="submit" class="dlt" class="btn btn-danger">Sim</button><a href="{{ route('tarefas-listar', ['id' => $tarefas->id]) }}"></a>
+            <button type="submit" class="cncl" class="btn btn-primary"><a href="{{ route('tarefas-listar') }}">Não</a></button>
         </div>
     </form>
 </div>

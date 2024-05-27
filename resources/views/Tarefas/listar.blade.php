@@ -9,7 +9,7 @@
     <h1>listagem de cadastros</h1>
     @include('Tarefas/flash-message')
     <div class="corpo">
-        <a href="{{ route('tarefas-create') }}">Novo Registro</a>
+        <a href="{{ route('tarefas-create') }}">Nova tarefa</a>
         <table class="table">
         <thead>
             <tr>

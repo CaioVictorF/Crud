@@ -10,7 +10,7 @@
         @csrf
             <header>
                 <h1>Novas tarefas</h1>
-                <a class="link" href="listar">listar</a>
+                <a class="link" href="listar">listar tarefas</a>
             </header>
             @include('Tarefas/flash-message')  
                 <div class="corpo">         
